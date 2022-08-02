@@ -2,7 +2,7 @@ import { Header } from "./components/Header";
 import { Searcher } from "./components/Searcher";
 import { TrendingPreview } from "./components/TrendingPreview";
 import { CategoriesContainer } from "./components/CategoriesContainer";
-
+import { createTheme, ThemeProvider } from "@mui/material";
 function App() {
   const apiKey = import.meta.env.VITE_API_KEY;
   console.log(apiKey);
