@@ -1,14 +1,18 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
+import { Header } from "./components/Header";
+import { Searcher } from "./components/Searcher";
+import { TrendingPreview } from "./components/TrendingPreview";
+import { CategoriesContainer } from "./components/CategoriesContainer";
 
 function App() {
-  const [count, setCount] = useState(0);
   const apiKey = import.meta.env.VITE_API_KEY;
   console.log(apiKey);
   return (
-    <div className="App">
-      <h1>movies</h1>
+    <div>
+      <Header />
+      <Searcher />
+      <TrendingPreview />
+      <CategoriesContainer />
+      <footer>Hecho con ♥ por @arturomauricio</footer>
     </div>
   );
 }
